@@ -7,11 +7,13 @@ const Table = (props) => {
       return <div className="empty-plate" style={{ top: -7 * index }}/>
     })
   }
+  let cost = props.price
+  let state = 100
 
   return (
     <Fragment>
       <h1 className="remaining">
-        You have: ${ /* Give me how much money I have left */ } remaining!
+        You have: ${ state -= cost } remaining!
       </h1>
       <div className="table">
         <div className="stack">
